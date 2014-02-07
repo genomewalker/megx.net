@@ -11,6 +11,7 @@
 
     <title>Jumbotron Template for Bootstrap</title><!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -22,26 +23,57 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+<div id="header" class="container">
+    <img src="images/logo.png">
+</div>    
+    <div id="nav-wrapper">    
+    <div id="nav" class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <button class="navbar-toggle" data-target=".navbar-collapse"
-                data-toggle="collapse" type="button"><span class=
-                "sr-only">Toggle navigation</span></button> <a class=
-                "navbar-brand" href="#">Bootstrap theme</a>
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button> <a class="navbar-brand" href="#">Bootstrap theme</a>
             </div>
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
 
-                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">tools</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mapserver</a></li>
+
+                            <li><a href="#">Geographic Blast</a></li>
+
+                            <li><a href="#">GIS Tools</a></li>
+
+                            <li><a href="unknown-blast">Unknonwn Blast</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+
+                            <li><a href="#">Another action</a></li>
+
+                            <li><a href="#">Something else here</a></li>
+
+                            <li class="dropdown-header">Nav header</li>
+
+                            <li><a href="#">Separated link</a></li>
+
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
 
                     <li><a href="#contact">Contact</a></li>
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href=
-                        "#">Dropdown</a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
 
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
@@ -58,60 +90,109 @@
                         </ul>
                     </li>
                 </ul>
+                <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
             </div><!--/.nav-collapse -->
         </div>
+        </div>
     </div>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+
 
     <div class="jumbotron">
-        <div class="container">
-            <h1>Hello, world!</h1>
+        <h2>Informatics + microbiology = quality &amp; efficiency</h2>
 
-            <p>This is a template for a simple marketing or informational
-            website. It includes a large callout called a jumbotron and three
-            supporting pieces of content. Use it as a starting point to create
-            something more unique.</p>
+        <p>Megx.net allows access to integrated environmental &amp; (meta)genomic data intended for use in marine microbial ecology</p>
 
-            <p><a class="btn btn-primary btn-lg">Learn more »</a></p>
-        </div>
+        <p><a class="btn btn-primary btn-lg" href="#">Learn more »</a></p>
     </div>
 
     <div class="container">
         <!-- Example row of columns -->
 
         <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
+            <div class="col-sm-4">
+                
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Map server</h3>
+                    </div>
 
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <div class="panel-body">
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 
-                <p><a class="btn btn-default" href="#">View details »</a></p>
-            </div>
+                        <p><a class="btn btn-default" href="#">View details »</a></p>
+                    </div>
+                </div>
 
-            <div class="col-md-4">
-                <h2>Heading</h2>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">GeoBlast</h3>
+                    </div>
 
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum
-                nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-                malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <div class="panel-body">
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 
-                <p><a class="btn btn-default" href="#">View details »</a></p>
-            </div>
+                        <p><a class="btn btn-default" href="#">View details »</a></p>
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            
+                        <div class="col-sm-4">
+                
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Envo-lite</h3>
+                    </div>
 
-            <div class="col-md-4">
-                <h2>Heading</h2>
+                    <div class="panel-body">
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis
-                in, egestas eget quam. Vestibulum id ligula porta felis euismod
-                semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p><a class="btn btn-default" href="#">View details »</a></p>
+                    </div>
+                </div>
 
-                <p><a class="btn btn-default" href="#">View details »</a></p>
-            </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">GeoPfam</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+                        <p><a class="btn btn-default" href="#">View details »</a></p>
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            
+                        <div class="col-sm-4">
+                
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Unknown Blast</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+                        <p><a class="btn btn-default" href="unknown-blast">View details »</a></p>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div><!-- /.col-sm-4 -->
         </div>
         <hr>
 
@@ -122,6 +203,9 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script><script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/megx.js"></script>
+
 </body>
 </html>
