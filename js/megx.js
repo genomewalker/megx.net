@@ -1,3 +1,4 @@
+// fix navbar on top while scrolling
 $(function() {
     $('#nav-wrapper').height($("#nav").height());
     
